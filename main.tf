@@ -9,7 +9,7 @@ resource "google_service_account" "default" {
 }
 
 resource "google_compute_instance" "my-instance" {
-  name         = "my-Demoins"
+  name         = "my-Demoinss"
   machine_type = "n2-standard-2"
   zone         = "us-central1-a"
 
