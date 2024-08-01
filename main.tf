@@ -7,13 +7,10 @@ resource "google_service_account" "default" {
   account_id   = "my-custom-sa"
   display_name = "Custom SA for VM Instance"
 }
-resource "google_service_account" "default2" {
-  account_id   = "my-custom-saaac"
-  display_name = "Custom SA for VM Instance"
-}
 
-resource "google_compute_instance" "default-2" {
-  name         = "my-instance-1"
+
+resource "google_compute_instance" "default" {
+  name         = "my-instance"
   machine_type = "n2-standard-2"
   zone         = "us-central1-a"
 
